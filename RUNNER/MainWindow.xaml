@@ -1,0 +1,43 @@
+﻿<Window x:Class="RUNNER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RUNNER"
+        mc:Ignorable="d"
+        Title="RUNNER" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyisDown" KeyUp="KeyisUp" Background="LightBlue">
+
+            <Rectangle Name="background" Height="400" Width="1262" Fill="Orange" Canvas.Left="0"/>
+            <Rectangle Name="background2" Height="400" Width="1262" Fill="LightGreen" Canvas.Left="1262"/>
+
+            <Rectangle Name="ground" Height="32" Width="792" Fill="Black" Canvas.Top="387" Canvas.Left="0"/>
+
+            <Rectangle Name="player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110"/>
+
+            <Rectangle Name="obstacle" Height="178" Width="50" Fill="Red" Canvas.Top="320" Canvas.Left="721"/>
+
+            <Label Name="scoreText" FontSize="32" FontWeight="Bold" Content="Score: 0"/>
+            
+
+        </Canvas>
+        <Grid x:Name="GAMEOVERSCREEN" Background="Black" Visibility="Collapsed">
+
+
+            <TextBlock Text="GAME OVER!" Foreground="Red" FontFamily="JokerMan" FontSize="54" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,100,0,0">
+
+
+            </TextBlock>
+            <StackPanel x:Name="SCORE" Margin="0,200,0,0" Visibility="Collapsed" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                <TextBlock x:Name="scoreshower" Foreground="Wheat" FontSize="24" FontFamily="Jokerman" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,10">
+
+                </TextBlock>
+                <TextBlock x:Name="destro" Text="Press Enter To Play Again!" FontSize="20" FontFamily="Jokerman" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" ></TextBlock>
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

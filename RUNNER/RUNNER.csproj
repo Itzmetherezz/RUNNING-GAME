@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ASSETS\background.gif" />
+    <None Remove="ASSETS\newRunner_01.gif" />
+    <None Remove="ASSETS\newRunner_02.gif" />
+    <None Remove="ASSETS\newRunner_03.gif" />
+    <None Remove="ASSETS\newRunner_04.gif" />
+    <None Remove="ASSETS\newRunner_05.gif" />
+    <None Remove="ASSETS\newRunner_06.gif" />
+    <None Remove="ASSETS\newRunner_07.gif" />
+    <None Remove="ASSETS\newRunner_08.gif" />
+    <None Remove="ASSETS\obstacle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ASSETS\background.gif" />
+    <Resource Include="ASSETS\newRunner_01.gif" />
+    <Resource Include="ASSETS\newRunner_02.gif" />
+    <Resource Include="ASSETS\newRunner_03.gif" />
+    <Resource Include="ASSETS\newRunner_04.gif" />
+    <Resource Include="ASSETS\newRunner_05.gif" />
+    <Resource Include="ASSETS\newRunner_06.gif" />
+    <Resource Include="ASSETS\newRunner_07.gif" />
+    <Resource Include="ASSETS\newRunner_08.gif" />
+    <Resource Include="ASSETS\obstacle.png" />
+  </ItemGroup>
+
+</Project>
