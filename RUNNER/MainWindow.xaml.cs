@@ -5,6 +5,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input; 
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -150,7 +151,11 @@ namespace RUNNER
                 SCORE.Visibility=Visibility.Visible;
                 scoreshower.Text = "Your Score: " + score;
                 destro.Visibility=Visibility.Visible;
-                
+
+                Storyboard fadeInStoryBoard = (Storyboard)FindResource("FadeIn");
+                fadeInStoryBoard.Begin();
+                    
+                    
 
             }
 
